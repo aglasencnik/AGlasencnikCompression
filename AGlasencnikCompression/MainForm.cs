@@ -134,7 +134,7 @@ namespace AGlasencnikCompression
 
                     if (dialog == DialogResult.Yes)
                     {
-                        outputFilePath = tbxDecompress.Text.Substring(0, tbxDecompress.Text.Length - 3);
+                        outputFilePath = inputFilePath.Remove(inputFilePath.Length - 3);
 
                         DecompressFile(inputFilePath, outputFilePath);
 
